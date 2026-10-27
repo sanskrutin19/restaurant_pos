@@ -1,0 +1,83 @@
+name: restaurant_pos
+description: A complete Restaurant POS system built with Flutter
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_riverpod: ^2.6.1
+  
+  # Networking
+  dio: ^5.4.0
+  
+  # WebSocket
+  web_socket_channel: ^3.0.1
+  
+  # Date/Time
+  intl: ^0.19.0
+  
+  # URL Launcher
+  url_launcher: ^6.2.1
+  
+  # Audio
+  audioplayers: ^6.0.0
+  
+  # Printing
+  printing: ^5.13.2
+  pdf: ^3.11.1
+  esc_pos_utils_plus: ^2.0.4
+  
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.4
+  
+  # Connectivity
+  connectivity_plus: ^6.0.3
+  
+  share_plus: ^12.0.1
+  nsd: ^2.2.0
+  
+  # Charts
+  fl_chart: ^1.2.0
+  
+  # UI
+  flutter_spinkit: ^5.2.2
+  google_fonts: ^6.1.0
+  freezed_annotation: ^2.4.4
+  open_file_plus: ^3.4.1+1
+  network_info_plus: ^7.0.0
+  qr_flutter: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  freezed: ^2.5.5
+  json_serializable: ^6.8.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/images/logo.png"
+    icon_size: 48 # Default size for Windows
+
+
+dependency_overrides:
+  image: 4.3.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/

@@ -1,0 +1,39 @@
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ── Secrets ───────────────────────────────────────────
+backend/services/_license_secret.py
+.env
+.env.*
+
+# ── Databases (runtime data, never commit) ────────────
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqbpro
+
+# ── Build / packaging output ──────────────────────────
+build/
+dist/
+DEPLOY/
+release/
+*.exe
+*.zip
+
+# ── Local data & scratch ──────────────────────────────
+data/
+_local/
+*.log
+*.lnk
+
+# ── IDE / OS ──────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
